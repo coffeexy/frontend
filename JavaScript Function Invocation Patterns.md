@@ -170,5 +170,17 @@ JavaScript还有种调用方法是call，类似apply方法,不过它传递的不
 
 无论好坏，JavaScript都已经流行了。了解语言的特征,并避免这种特性带来的异常非常重要。学习四种函数调用方法哪里不同，以及如何避免缺陷是使用JavaScript的基础。
 
-
 原文：[http://doctrina.org/Javascript-Function-Invocation-Patterns.html](http://doctrina.org/Javascript-Function-Invocation-Patterns.html)
+
+废话在后
+========================
+总结下this.
+1.  对于obj.fun()此类方法函数调用,哪个`对象实例`(obj)调用this所在的函数(fun),this指向那个`对象实例`
+
+2.  对于函数调用,this指向全局对象.(其实可以看做上一种,是window对象的方法函数,全局对象调用,则指向全局对象).避免这种语言设计不合理的一个小技巧就是,进入函数后就申明一个变量_this,赋值this给它(_this),保存下来.
+
+3.  对于构造函数调用,若该函数返回一个简单类型（number, string, boolean, null or undefined），忽略return值，返回this（指向新的对象）;如果该函数返回一个object实例（简单类型以外的任何类型），那么将返回该对象。
+
+4.  apply和call调用,this指向apply和call第一参数.即手动设置this的值.
+
+完.
