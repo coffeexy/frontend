@@ -6,7 +6,7 @@
 
 [master.html](https://github.com/CoffeeXu/Front-end/blob/master/master.html):尽量兼容IE6的遮罩,随滚动轴滚动.
 
-[So, you think you know JavaScript]():5道题解答笔记.
+[So, you think you know JavaScript](https://github.com/CoffeeXu/Front-end/blob/master/So%2C%20you%20think%20you%20know%20JavaScript.md):5道题解答笔记.
 被搁置的废话一篇
 =================
 
