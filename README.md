@@ -1,6 +1,12 @@
 ﻿目录
 ================
+[标签搜索](https://github.com/CoffeeXu/Front-end/blob/master/tabSearch.html):单选框RadioBox的自实现形式之一
+
+![标签搜索的效果图IE8](/img/tabSearch.jpg "aa")
+
 [div+css实现小三角](https://github.com/CoffeeXu/Front-end/blob/master/arrow.html):两种div+css实现小三角的应用.
+
+<img src="img/arrow.jpg" alt="arrow效果图" title="arrow效果图"></img>
 
 [JavaScript Function Invocation Patterns](https://github.com/CoffeeXu/Front-end/blob/master/JavaScript%20Function%20Invocation%20Patterns.md):介绍四种函数调用模式,及与this的关系.
 
