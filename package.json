@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "start": "gulp & puer"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-iconfont": "^8.0.1",
+        "gulp-iconfont-css": "^2.1.0",
+        "gulp-if": "^2.0.1",
+        "gulp_mcss": "^0.3.0",
+        "sprity": "^1.0.8",
+        "puer": "^1.1.0"
+      },
+    "dependencies": {
+    }
+}
