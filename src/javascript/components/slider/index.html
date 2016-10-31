@@ -1,0 +1,10 @@
+<ul class="m-slide-ul" style="{'width:' + list.length*itemwidth + 'px;margin-left:' + left}">
+    {#list list as p}
+    <li class="m-slide-item" on-mouseenter="{this.stopSlide()}" on-mouseleave="{this.slide()}">
+        <a href="{p.url}">
+            <img src="{'../../res/images/' + p.bgPhone}">
+            <img class="u-hover" src="{'../../res/images/' + p.mask}">
+        </a>
+    </li>
+    {/list}
+</ul>

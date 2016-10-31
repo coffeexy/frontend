@@ -1,0 +1,25 @@
+// Name:            Variables
+// Description:     变量
+// Author:          sensen(rainforest92@126.com)
+// ========================================================================
+
+
+
+// Dimension Variables:
+// ========================================================================
+
+/* Dimensions */
+$media-xs-max-width =                   480px - 1;
+$media-sm-max-width =                   768px - 1;
+$media-md-max-width =                   1200px - 1;
+$media-mdx-max-width = 1330px;
+$media-lg-max-width =                   1600px - 1;
+
+/* Height */
+$height-footer = 278px;
+$height-xs = 22px;
+$height-s = 24px;
+$height-sm = 30px;
+$height-lg = 38px;
+$height-x = 40px;
+$height-xl = 46px;
