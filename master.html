@@ -1,0 +1,54 @@
+<!-- 先来一段废话好不好？-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>master scroll IE6</title>
+	<style>
+		*{margin:0;padding:0;}
+		.cnt{}
+		#master{height:100%; width:100%;background:#000;position:absolute;top:0;z-index:5;opacity:0.5;filter: alpha(opacity=50);zomm: 1;}
+		#about{position:absolute;left:50%;margin-left: -222px;top:50%;margin-top:-122px;height: 244px;width: 444px; background: #dcdcdc no-repeat;z-index:5;}
+	</style>
+</head>
+<body>
+	<div class="cnt">
+		<button onclick="show()">click me</button>
+		<p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p><p>haaaaaaaaaaaaa</p>
+	</div>
+	<div id="master" style="display:none;"></div>
+	<div id="about" style="display:none;">
+		  <div class="versionText">
+				<h1>hello world</h1>
+				<p>master scroll IE6</p>
+    	</div>
+	</div>
+	<!-- -->
+	<script>
+		function $(id){
+			return document.getElementById(id);
+		}
+		
+		function show(){
+			var master = $('master'), box = $('about');
+	
+			master.style.display = "block";
+			box.style.display = "block";
+			
+			//关闭
+			master.onclick = function(){
+				master.style.display = "none";
+				box.style.display = "none";
+			};
+			
+			window.onscroll = function(){
+			    var t = document.documentElement.scrollTop || document.body.scrollTop; 
+			    var H = document.documentElement.clientHeight || document.body.clientHeight;		    
+			    master.style.top = t+"px";
+			    box.style.top = H/2+t+"px";
+			}
+		}
+	</script>
+</body>
+</html>
