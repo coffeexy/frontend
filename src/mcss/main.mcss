@@ -1,8 +1,0 @@
-@abstract "_var.mcss";
-@import "base/_base.mcss";
-@import "base/_function.mcss";
-@import "base/_effect.mcss";
-@import "_grid.mcss";
-
-
-@import "_index.mcss";
